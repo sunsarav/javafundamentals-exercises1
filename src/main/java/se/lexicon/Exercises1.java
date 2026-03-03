@@ -2,8 +2,9 @@ package se.lexicon;
 import java.util.Random;
 import java.util.Scanner;
 
-public class exercises1 {
+public class Exercises1 {
     static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
         //Print Hello and my name - 1
 
@@ -12,7 +13,6 @@ public class exercises1 {
 
         //Print leap year or not - 2
 
-        /*Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the year to check leap or not: ");
         int year = scanner.nextInt();
         if (year % 4 == 0 && year % 100 != 0) {
@@ -27,11 +27,10 @@ public class exercises1 {
         System.out.println("45 + 11 = " +(45 + 11));
         System.out.println("12 * 4 = " +(12 * 4));
         System.out.println("24 / 6 = " +(24 / 6));
-        System.out.println("55 - 12 = " +(55 - 12));*/
+        System.out.println("55 - 12 = " +(55 - 12));
 
         //Average of 3 nums - 4
 
-        /*Scanner scanner = new Scanner(System.in);
         System.out.println("Enter 1st number: ");
         int no1 = scanner.nextInt();
 
@@ -52,8 +51,6 @@ public class exercises1 {
 
         //Print +,*,/,- of 2 nums - 6
 
-        Scanner scanner = new Scanner(System.in);
-
         System.out.print("Enter 1st number: ");
         int num1 = scanner.nextInt();
 
@@ -72,18 +69,16 @@ public class exercises1 {
 
         //Convert seconds to hours, minutes and seconds - 7
 
-        Scanner scanner = new Scanner(System.in);
-
         System.out.println("Input Seconds: ");
         int sec = scanner.nextInt();
         int hours = sec / 3600;
         int minutes = (sec % 3600) / 60;
         int seconds = sec % 60;
         System.out.println("Expected Output: ");
-        System.out.println(hours + ":" + minutes + ":" + seconds);*/
+        System.out.println(hours + ":" + minutes + ":" + seconds);
 
         //Random guessing number - 8
-        Scanner scanner = new Scanner(System.in);
+
         Random rand = new Random();
 
         int randomNumber = rand.nextInt(500) + 1;
